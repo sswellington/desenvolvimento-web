@@ -1,0 +1,25 @@
+ATIVIDADE: Meu primeiro site HTML
+
+Valor: 2.5
+
+1) Ver o tema da dupla!.
+
+2) O site deve conter no mínimo 4 páginas (seguir o exemplo Receitas).
+
+2.1) Cada página deve ser de uma cor diferente.
+
+2.2) Em cada página a fonte deve ser de cor diferente.
+
+2.3) Todas as páginas devem conter ao menos uma imagem.
+
+2.4) Uma das páginas deve possuir uma âncora e link para ela na página principal.
+
+2.5) Deve ser possível retornar a página inicial de todas as páginas (voltar).
+
+2.6) Uma das páginas deve possuir uma tabela com 4 linhas e 2 colunas apresentando uma 
+
+Tabela Nutricional (ou algo semelhante).
+
+2.7) Utilizar as tags: h1, title, align, p, br, font, (comentários <­­!), b, i, u, img, ul, li, table.
+
+3) Deve possuir um formulário com todos os tipos de campo da apresentação HTML.

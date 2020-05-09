@@ -1,0 +1,73 @@
+@charset "utf-8";
+body {
+    font-family: arial;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 1);
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a#noticia {
+  color: #d60d0d;
+}
+
+a#esporte {
+  color: #50a616;
+}
+
+a#entretenimento {
+  color: #f76c06;
+}
+
+a#tecnologia {
+  color: #555555;
+}
+
+a#video {
+  color: #005eab;
+  text-align: center;
+}
+
+table {
+  padding: 10px;
+  margin: 10px;
+}
+
+table td {
+  padding: 10px;
+  margin: 12px;
+  font-weight: bold;
+  text-align: right;
+}
+
+table td img {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+table td.noticia {
+    color: #d60d0d;
+}
+
+table td.esporte {
+    color: #50a616;
+}
+
+table td.entretenimento {
+  color: #f76c06;
+}
+
+table td.tecnologia {
+  color: #555555;
+}
+
+table td.video {
+  color: #005eab;
+}

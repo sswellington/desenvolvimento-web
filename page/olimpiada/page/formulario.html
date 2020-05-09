@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Olimpíada - Rio 2016</title>
+    <link rel="shortcut icon" type="image/x-icon" href="_imagens/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../_css/style.css">
+    <link rel="stylesheet" type="text/css" href="../_css/home.css">
+</head>
+<body>
+    <div id="interface">
+        <nav id="menu">
+            <ul>
+                <li> <a href="https://pt.wikipedia.org/wiki/Jogos_Ol%C3%ADmpicos_de_Ver%C3%A3o_de_2016"> NOTICIAS </a>
+                </li>
+                <li> <a href="calendario.html"> CALENDARIO </a> </li>
+                <li> <a href="modalidade.html"> MODALIDADE </a> </li>
+                <li> <a href="fale-conosco.html"> ingresso </a> </li>
+                <li> <a href="formulario.html"> Formulario </a> </li>
+                <li> <a href="about.html"> Sobre </a> </li>
+            </ul>
+            <!--   imagem de cabeçalho       -->
+            <a href="../index.html"> <img id="capa" src="../_image/smallolimpiadas-rio-2016-logo.png"> <a />
+                <img id="cabecalho" src="../_image/capa0.png">
+        </nav>
+        <aside id="tabela">
+            <form method="post" id="Fcontato" action="mailto:teste@gmail.com" oninput="calc_total()">
+                <table width="70%" border=1 align='center'>
+                    <tr>
+                        <td><b>NOME</b></td>
+                        <td colspan=2>
+                            <input type="text" name="nome">
+                            <br>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><b>EMAIL</b></td>
+                        <td colspan=2>
+                            <input type="email" name="Temail" id="idEmail" size="20" maxlength="40"
+                                placeholder=" Digite seu e-mail">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan=3 valign=top><b>SEXO</b></td>
+                        <td colspan=2>
+                            <input type="radio" name="sexo" value="masculino">M</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td colspan=2>
+                            <input type="radio" name="sexo" value="masculino">F</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td colspan=2>
+                            <input type="radio" name="sexo" value="masculino">NÃO INFORMAR</td>
+
+                    </tr>
+
+                    <tr border=0>
+
+                        <td border=0 colspan=2></td>
+                        <td align=right>
+                            <input type="image" src="../_image/botao-enviar.png" value="Enviar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </aside>
+    </div>
+</body>
+</html>

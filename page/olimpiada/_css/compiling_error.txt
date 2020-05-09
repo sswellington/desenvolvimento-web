@@ -1,0 +1,2 @@
+/home/wellintgon/Dropbox/Faculdade/computacao/WEB/olimpíada/_css/home.css: file not recognized: File format not recognized
+collect2: error: ld returned 1 exit status

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset=utf-8>
+	<title>
+		Tudo sobre Google Glass
+	</title>
+	<link rel="shortcut icon" type="image/x-icon" href="_imagens/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="_css/form.css">
+
+	<script>
+		function mudafoto(foto) {
+			document.getElementById("icone").src = foto;
+		}
+	</script>
+
+	<script>
+		function calc_total() {
+			var qtd = parseInt(document.getElementById('idQuantidade').value);
+			total = qtd * 1500;
+			document.getElementById('idPreco').value = total;
+		}
+	</script>
+</head>
+
+
+
+<body>
+	<div id="interface">
+
+		<header id="cabecalho">
+			<hgroup>
+				<h1><a href="index.html">Google Glass</a></h1>
+				<h2>A revolução do Google está chegando.</h2>
+			</hgroup>
+
+			<img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+		</header>
+
+		<nav id=menu>
+			<h2>Menu Principal</h2>
+			<ul>
+				<li onmousemove="mudafoto('_imagens/home.png')" onmouseout="mudafoto('_imagens/glass-oculos-preto-peq.png')"> <a href="index.html">Home </a> </li>
+
+				<li onmousemove="mudafoto('_imagens/especificacoes.png')" onmouseout="mudafoto('_imagens/glass-oculos-preto-peq.png')"> <a href="specs.html">Especificações </a> </li>
+
+				<li onmousemove="mudafoto('_imagens/fotos.png')" onmouseout="mudafoto('_imagens/glass-oculos-preto-peq.png')"> <a href="fotos.html">Fotos </a> </li>
+
+				<li onmousemove="mudafoto('_imagens/multimidia.png')" onmouseout="mudafoto('_imagens/glass-oculos-preto-peq.png')"> <a href="multimidia.html">Multimídia </a> </li>
+
+				<li onmousemove="mudafoto('_imagens/contato.png')" onmouseout="mudafoto('_imagens/glass-oculos-preto-peq.png')"> <a href="fale-conosco.html">Fale conosco </a> </li>
+			</ul>
+		</nav>
+		<hgroup>
+			<header id="cabecalho-artigo">
+				<h2>Fale Conosco > Contato</h2>
+				<h1>Formulário de Contato</h1>
+				<h2>por Wellington Silva</h2>
+				<h4>Atualizado em 2/Julho/2015</h4>
+			</header>
+		</hgroup>
+
+		<form method="post" id="Fcontato" action="mailto:contato@glass.com" oninput="calc_total()">
+			<fieldset id="identidade">
+				<legend>Identificação do Usuário</legend>
+				<p>
+					<label for="idNome">Nome : </label>
+					<input type="text" name="Tnome" id="idNome" size="20" maxlength="30" placeholder=" Nome completo" />
+				</p>
+
+				<p>
+					<label for="idSenha">Senha:</label>
+					<input type="password" name="Tsenha" id="idSenha" size="16" maxlength="16" placeholder=" Até 16 Dígitos">
+				</p>
+
+				<p>
+					<label for="idEmail">E-mail:</label>
+					<input type="email" name="Temail" id="idEmail" size="20" maxlength="40" placeholder=" Digite seu e-mail">
+				</p>
+
+				<fieldset id="sexo">
+					<legend>Sexo</legend>
+					<input type="radio" name="Tsexo" id="idMasculino" checked>
+					<label for="idMasculino">Masculino</label>
+					<input type="radio" name="Tsexo" id="idFeminino">
+					<label for="idFeminino">Feminino</label>
+				</fieldset>
+				<p>
+					<label for="idNascimento">Data de Nascimento:</label>
+					<input type="date" name="Tnascimento" id="idNascimento">
+				</p>
+			</fieldset>
+
+			<fieldset id="endereco">
+				<legend>Endereço do Usuário</legend>
+				<p>
+					<label for="idLogradouro"> Logradouro:</label>
+					<input type="text" name="Tlogradouro" id="idLogradouro" size="20" maxlength="30" placeholder="Rua, Avenida, Estrada">
+				</p>
+				<p>
+					<label for="idNumero"> Número:</label>
+					<input type="number" name="Tnumero" id="idNumero" min="0" max "99999">
+				</p>
+				<p>
+					<label for="idEstado"> Estado:</label>
+					<select name="Testado" id="idEstado">
+						<option>AC</option>
+						<option>AL</option>
+						<option>AP</option>
+						<option>AM</option>
+						<option>BA</option>
+						<option>CE</option>
+						<option>DF</option>
+						<option>ES</option>
+						<option>GO</option>
+						<option>MA</option>
+						<option>MT</option>
+						<option>MS</option>
+						<option>MG</option>
+						<option>PA</option>
+						<option>PB</option>
+						<option>PR</option>
+						<option>PE</option>
+						<option>PI</option>
+						<option selected>RJ</option>
+						<option>RN</option>
+						<option>RS</option>
+						<option>RO</option>
+						<option>RR</option>
+						<option>SC</option>
+						<option>SP</option>
+						<option>SE</option>
+						<option>TO</option>
+					</select>
+				</p>
+				<p>
+					<label for="idCidade">Cidade:</label>
+					<input type="text" maxlength="40" size="20" placeholder=" Sua Cidade" name="Tcidade" id="idCidade" list="cidade">
+					<datalist id=cidade>
+						<option value="Rio de Janeiro"></option>
+						<option value="São Paulo"></option>
+						<option value="Macaé"></option>
+						<option value="São Fidélis"></option>
+						<option value="Campos dos Goytacazes"></option>
+						<option value="Santo Antônio de Pádua"></option>
+						<option value="Aperibé"></option>
+						<datalist>
+				</p>
+			</fieldset>
+
+			<fieldset id="mensagem">
+				<legend>Mensagem do Usuário</legend>
+				<p>
+					<label for="idUrgencia">Grau de Urgência:</label> Mín
+					<input type="range" min="0" max="10" step="2" name="Turgencia" id="idUrgencia"> Max
+				</p>
+				<p>
+					<label for="idMensagem">Mensagem:</label>
+					<textarea name="Tmensagem" id="idMensagem" cols="45" rows="5" placeholder="  Digite aqui sua mensagem. "></textarea>
+				</p>
+			</fieldset>
+
+			<fieldset id="pedido">
+				<legend>Quero um Google Glass</legend>
+				<p>
+					<input type="checkbox" name="Tpedido" id="idPedido" checked>
+					<label for="idPedido">Gostaria de adquirir um Google Glass quando disponível</label>
+				</p>
+				<p>
+					<label for="idCor">Cor:</label>
+					<input type="color" value="#f60c04" name="Tcor" id="idCor">
+				</p>
+				<p>
+					<label for="idQuantidade">Quantidade:</label>
+					<input type="number" min="0" max="99" name="Tquantidade" id="idQuantidade">
+				</p>
+				<p>
+					<label for="idPreco"> Preço Total $:</label>
+					<input type="text" name="Tpreco" id="idPreco" placeholder=" Total à paga" readonly>
+				</p>
+			</fieldset>
+
+			<input type="image" src="_imagens/botao-enviar.png" value="Enviar">
+		</form>
+
+		<footer id="rodape">
+			<article id="criador">
+				<h5>Copyright 2015© - by Wellington Silva</h5>
+				<h5><a href="https://www.facebook.com/?_rdr" target="_blank">Facebook</a> |
+				<a href="https://twitter.com/" target="_blank"> Twitter</a></h5>
+			</article>
+			<article id="parceiros"> <b>Parceiros:</b>
+				<a href="http://cursoemvideo.com/" target="_blanck">
+					<br><img id="parceiros-curso" src="_imagens/logo-curso.png"><span><br>Curso em Vídeos</span></a>
+			</article>
+		</footer>
+
+	</div>
+</body>
+
+</html>
